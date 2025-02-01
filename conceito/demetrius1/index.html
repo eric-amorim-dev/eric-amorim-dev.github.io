@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Demetrius Pêgas - Corretor de Imóveis</title>
+
+  <link rel="stylesheet" type="text/css" href="css/vendor.css">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+
+  <!-- Link Bootstrap's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts ================================================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- script ================================================== -->
+  <script src="js/modernizr.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-example2" tabindex="0">
+
+  <!-- nav bar start  -->
+  <header id="nav" class="site-header position-fixed text-white bg-dark">
+    <nav id="navbar-example2" class="navbar navbar-expand-lg py-2">
+
+      <div class="container ">
+
+        <a class="navbar-brand" href="./index.html"><img src="images/logoD1.png" alt="image"></a>
+
+
+        <button class="navbar-toggler text-white" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation"><ion-icon
+            name="menu-outline" style="font-size: 30px;"></ion-icon></button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2"
+          aria-labelledby="offcanvasNavbar2Label">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Menu</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav align-items-center justify-content-end align-items-center flex-grow-1 ">
+              <li class="nav-item">
+                <a class="nav-link active me-md-4" href="#inicio">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-md-4" href="#residence">Imóveis</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-md-4" href="#sobre">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-md-4" href="#contato">Contato</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- billboard start  -->
+  <section id="inicio">
+    <div class="container ">
+      <div class="row flex-lg-row-reverse align-items-center ">
+
+        <div class="col-lg-6">
+          <img src="images/billboard.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
+            height="500" loading="lazy">
+        </div>
+
+        <div class="col-lg-6">
+          <h1 class=" text-capitalize  lh-1 my-3">Conectando você aos melhores imóveis!</h1>
+          <p class="lead">Transforme o seu sonho em realidade.</p>
+          <nav class="navbar navbar-expand-lg billboard-nav">
+            <div class="container billboard-search p-0">
+
+              <div class="row billboard-row">
+                <div class="col-lg-3 billboard-select">
+                  <select class="form-select mb-2 mb-lg-0" aria-label="Purpose">
+                    <option selected>Finalidade</option>
+                    <option value="1">Compra & Venda</option>
+                    <option value="2">Permuta</option>
+                    <option value="3">Outros Negócios</option>
+
+                  </select>
+                </div>
+                <div class="col-lg-3 billboard-select">
+                  <select class="form-select mb-2 mb-lg-0" aria-label="Location">
+                    <option selected>Localização</option>
+                    <option value="1">Bahia</option>
+                    <option value="2">Minas Gerais</option>
+                  </select>
+                </div>
+                <div class="col-lg-3 billboard-select">
+                  <select class="form-select mb-2 mb-lg-0" aria-label="Type">
+                    <option selected>Tipo</option>
+                    <option value="1">Casa</option>
+                    <option value="2">Apartamento</option>
+                    <option value="3">Comercial</option>
+                    <option value="4">Sítio & Chácara</option>
+                    <option value="5">Lote</option>
+                  </select>
+                </div>
+
+                <div class="col-lg-3 billboard-btn">
+                  <button type="submit" class="btn btn-primary btn-lg billboard-search">Pesquisar</button>
+                </div>
+              </div>
+
+
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Residence start  -->
+  <section id="residence">
+    <div class="container  my-5 py-5">
+      <h2 class="text-capitalize m-0 py-lg-5">Imóveis em Destaque</h2>
+
+      <div class="swiper-button-next residence-swiper-next  residence-arrow"></div>
+      <div class="swiper-button-prev residence-swiper-prev residence-arrow"></div>
+
+      <div class="swiper residence-swiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="card">
+              <a href="property-single.html"><img src="images/item15.png" class="card-img-top" alt="image"></a>
+              <div class="card-body p-0">
+                <a href="property-single.html">
+                  <h5 class="card-title pt-4">Casa em Condomínio</h5>
+                </a>
+                <p class="card-text">Endereço X, nº 1 - Bairro X, Cidade X</p>
+
+                <div class="card-text">
+                  <ul class="d-flex">
+                    <li class="residence-list"> <img src="images/bed.png" alt="image"> 4 quartos</li>
+                    <li class="residence-list"> <img src="images/bath.png" alt="image"> 2 banh.</li>
+                    <li class="residence-list"> <img src="images/square.png" alt="image"> 600 m²</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <a href="property-single.html"><img src="images/item16.png" class="card-img-top" alt="image"></a>
+              <div class="card-body p-0">
+                <a href="property-single.html">
+                  <h5 class="card-title pt-4">Sala Comercial</h5>
+                </a>
+                <p class="card-text">Endereço X, nº 1 - Bairro X, Cidade X</p>
+
+                <div class="card-text">
+                  <ul class="d-flex">
+                    <li class="residence-list"> <img src="images/bed.png" alt="image"> 3 salas</li>
+                    <li class="residence-list"> <img src="images/bath.png" alt="image"> 1 banh.</li>
+                    <li class="residence-list"> <img src="images/square.png" alt="image"> 200 m²</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <a href="property-single.html"><img src="images/item17.png" class="card-img-top" alt="image"></a>
+              <div class="card-body p-0">
+                <a href="property-single.html">
+                  <h5 class="card-title pt-4">Apartamento</h5>
+                </a>
+                <p class="card-text">Endereço X, nº 1 - Bairro X, Cidade X</p>
+
+                <div class="card-text">
+                  <ul class="d-flex">
+                    <li class="residence-list"> <img src="images/bed.png" alt="image"> 3 quartos</li>
+                    <li class="residence-list"> <img src="images/bath.png" alt="image"> 2 banh.</li>
+                    <li class="residence-list"> <img src="images/square.png" alt="image"> 140 m²</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <a href="property-single.html"><img src="images/item15.png" class="card-img-top" alt="image"></a>
+              <div class="card-body p-0">
+                <a href="property-single.html">
+                  <h5 class="card-title pt-4">Casa em Condomínio</h5>
+                </a>
+                <p class="card-text">Endereço X, nº 1 - Bairro X, Cidade X</p>
+
+                <div class="card-text">
+                  <ul class="d-flex">
+                    <li class="residence-list"> <img src="images/bed.png" alt="image"> 4 quartos</li>
+                    <li class="residence-list"> <img src="images/bath.png" alt="image"> 2 banh.</li>
+                    <li class="residence-list"> <img src="images/square.png" alt="image"> 600 m²</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <a href="property-single.html"><img src="images/item16.png" class="card-img-top" alt="image"></a>
+              <div class="card-body p-0">
+                <a href="property-single.html">
+                  <h5 class="card-title pt-4">Sala Comercial</h5>
+                </a>
+                <p class="card-text">Endereço X, nº 1 - Bairro X, Cidade X</p>
+
+                <div class="card-text">
+                  <ul class="d-flex">
+                    <li class="residence-list"> <img src="images/bed.png" alt="image"> 3 salas</li>
+                    <li class="residence-list"> <img src="images/bath.png" alt="image"> 1 banh.</li>
+                    <li class="residence-list"> <img src="images/square.png" alt="image"> 200 m²</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <a href="property-single.html"><img src="images/item17.png" class="card-img-top" alt="image"></a>
+              <div class="card-body p-0">
+                <a href="property-single.html">
+                  <h5 class="card-title pt-4">Apartamento</h5>
+                </a>
+                <p class="card-text">Endereço X, nº 1 - Bairro X, Cidade X</p>
+
+                <div class="card-text">
+                  <ul class="d-flex">
+                    <li class="residence-list"> <img src="images/bed.png" alt="image"> 3 quartos</li>
+                    <li class="residence-list"> <img src="images/bath.png" alt="image"> 2 banh.</li>
+                    <li class="residence-list"> <img src="images/square.png" alt="image"> 140 m²</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+      </div>
+
+      <div class="residence-btn">
+        <a href="#" class="btn btn-primary btn-lg my-5">Ver Todos os Imóveis</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!--About us start  -->
+  <section id="sobre">
+    <div class="container">
+      <div class="row py-lg-5">
+
+        <h2 class="text-capitalize text-center m-0 py-lg-5">Sobre</h2>
+
+        <div class="text-center col-lg-4">
+          <img src="images/search.png" class="bd-placeholder-img rounded-circle" alt="Bootstrap Themes" width="140"
+            height="140" loading="lazy">
+          <h4 class="fw-normal mt-5 ">Profissionalismo</h4>
+          <p>Comprometido em oferecer um atendimento de alta qualidade, sempre buscando as melhores soluções para cada cliente.</p>
+        </div>
+
+        <div class="text-center col-lg-4">
+          <img src="images/price.png" class="bd-placeholder-img rounded-circle" alt="Bootstrap Themes" width="140"
+            height="140" loading="lazy">
+          <h4 class="fw-normal mt-5">Conhecimento de mercado</h4>
+          <p>Domínio das tendências e valores dos imóveis, garantindo uma negociação mais assertiva.</p>
+        </div>
+
+        <div class="text-center col-lg-4">
+          <img src="images/time.png" class="bd-placeholder-img rounded-circle" alt="Bootstrap Themes" width="140"
+            height="140" loading="lazy">
+          <h4 class="fw-normal mt-5 ">Agilidade</h4>
+          <p>Capacidade de responder rapidamente às demandas do mercado e dos clientes, facilitando processos e agilizando resultados.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Help start  -->
+  <section id="contato" class="py-5"
+    style="background: linear-gradient(270deg, #1A242F 0.01%, rgba(26, 36, 47, 0.00) 100%);">
+    <div class="container-lg my-5">
+
+      <div class="row d-flex justify-content-between align-items-center">
+
+        <div class="col-md-6">
+          <div class="image-holder d-flex">
+            <img src="images/group.png" class="img-fluid" alt="Bootstrap Themes" loading="lazy">
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="text-content ps-md-5 mt-4 mt-md-0">
+            <h3 class="text-capitalize">Compromisso com seu atendimento</h3>
+            <p>Com um atendimento personalizado e focado nas necessidades de cada cliente,
+               ofereço soluções eficazes e direcionadas no mercado imobiliário. 
+               Meu trabalho é baseado em escuta ativa, transparência e um profundo conhecimento do setor,
+                garantindo uma experiência segura e confiável. Comprometido com a agilidade e atenção aos detalhes,
+                 estou sempre pronto para facilitar cada etapa do processo, oferecendo um serviço profissional e eficiente.</p>
+            <a href="#" class="btn btn-primary btn-lg">Entre em contato</a>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer start  -->
+  <section id="footer">
+    <div class="container footer-container">
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5  ">
+
+        <div class=" col-md-4">
+          <h3><img src="images/LogoNovo.png" alt="image"></h3>
+          <i class="bi-facebook pe-4"></i>
+          <i class="bi-instagram pe-4"></i>
+          <i class="bi-twitter pe-4"></i>
+          <i class="bi-youtube pe-4"></i>
+        </div>
+       
+        <div class="col-md-2 ">
+          
+        </div>
+
+        <div class="col-md-2 ">
+          
+        </div>
+
+        <div class="col-md-2 ">
+          
+        </div>
+
+        <div class="col-md-2 ">
+          <h5>Contato</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">contato@demetriuspegas.com </a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">(77) 9 9999-9999</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center border-top"></footer>
+
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-2 ">
+        <div class="col-md-8 d-flex align-items-center">
+          <p>© 2025 Demetrius Pêgas - Todos os Direitos Reservados.</p>
+
+        </div>
+        <div class="col-md-4 d-flex align-items-center">
+          <p>Desenvolvivo por: <a href="https://linktr.ee/eric.webdev" class="link-primary"
+              target="_blank">Eric Amorim</a></p>
+
+        </div>
+
+      </footer>
+    </div>
+  </section>
+
+
+
+
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
